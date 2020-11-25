@@ -1,4 +1,4 @@
-package com.pera.array;
+package com.pera.question;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -10,14 +10,14 @@ import java.util.Set;
  */
 public class LeetCode3 {
     public int makeConnected(int n, int[][] connections) {
-        if(connections.length < n-1){
+        if (connections.length < n - 1) {
             return -1;
         }
-        Set set = new HashSet<Integer>();
-        for(int i=0 ;i<connections.length;i++){
+        Set<Integer> set = new HashSet<>();
+        for (int i = 0; i < connections.length; i++) {
             set.add(connections[i][0]);
             set.add(connections[i][1]);
         }
-        return n-set.size();
+        return n - set.size();
     }
 }

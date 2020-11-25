@@ -1,4 +1,4 @@
-package com.pera.array;
+package com.pera.question.datastructure;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -9,16 +9,23 @@ import java.util.Queue;
  * @refrence
  */
 public class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode() {}
-    TreeNode(int val) { this.val = val; }
+    public int val;
+    public TreeNode left;
+    public TreeNode right;
+
+    TreeNode() {
+    }
+
+    TreeNode(int val) {
+        this.val = val;
+    }
+
     TreeNode(int val, TreeNode left, TreeNode right) {
         this.val = val;
         this.left = left;
         this.right = right;
     }
+
     public static TreeNode initTree(Integer[] vals) {
         TreeNode root = new TreeNode(vals[0]);
         Queue<TreeNode> queue = new LinkedList<>();
@@ -27,7 +34,7 @@ public class TreeNode {
         while (queue != null) {
             TreeNode r = queue.poll();
             if (vals[cur] == null) {
-                r.left=null;
+                r.left = null;
             } else {
                 r.left = new TreeNode(vals[cur]);
                 queue.offer(r.left);

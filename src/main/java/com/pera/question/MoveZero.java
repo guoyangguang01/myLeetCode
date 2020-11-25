@@ -1,4 +1,4 @@
-package com.pera.array;
+package com.pera.question;
 
 /**
  * @author yangguang.guo
@@ -7,16 +7,15 @@ package com.pera.array;
  */
 public class MoveZero {
     public void moveZeroes(int[] nums) {
-        int i=0,j=0;
-        while(j<nums.length&&i<nums.length){
-            if(nums[i] ==0){
+        int i = 0, j = 0;
+        while (j < nums.length && i < nums.length) {
+            if (nums[i] == 0) {
                 i++;
 
-            }
-            else{
-                int temp =nums[i];
+            } else {
+                int temp = nums[i];
                 nums[i] = nums[j];
-                nums[j] =temp;
+                nums[j] = temp;
                 i++;
                 j++;
 

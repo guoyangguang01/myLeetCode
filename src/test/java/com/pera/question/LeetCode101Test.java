@@ -1,8 +1,9 @@
-package com.pera.array;
+package com.pera.question;
 
+import com.pera.question.datastructure.TreeNode;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * @author yangguang.guo
